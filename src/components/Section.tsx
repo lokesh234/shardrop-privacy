@@ -1,23 +1,22 @@
-import type { CSSProperties, ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { useReveal } from '../hooks'
 
-export function Section({ id, num, kicker, title, tldr, children }: {
-  id: string; num: string; kicker?: string; title: string; tldr?: ReactNode; children: ReactNode
+/** An editorial spread: number and label in the margin, headline, a standfirst that says it in one line, then the detail. */
+export function Section({ id, num, label, title, standfirst, wide, children }: {
+  id: string; num: string; label: string; title: ReactNode; standfirst?: ReactNode; wide?: boolean; children: ReactNode
 }) {
   const ref = useReveal<HTMLElement>()
   return (
-    <section id={id} ref={ref} className="section reveal" aria-labelledby={`${id}-title`}>
-      <p className="kicker"><span className="kicker-num">{num}</span>{kicker}</p>
-      <h2 id={`${id}-title`}>{title}</h2>
-      {tldr && (
-        <p className="tldr"><span className="tldr-label">In short</span>{tldr}</p>
-      )}
-      <div className="prose">{children}</div>
+    <section id={id} ref={ref} className={`section reveal${wide ? ' wide' : ''}`} aria-labelledby={`${id}-title`}>
+      <div className="margin">
+        <span className="num">{num}</span>
+        <span className="label mono">{label}</span>
+      </div>
+      <div className="body">
+        <h2 id={`${id}-title`}>{title}</h2>
+        {standfirst && <p className="standfirst">{standfirst}</p>}
+        {children}
+      </div>
     </section>
   )
-}
-
-/** A child that animates in, one after another, when its section scrolls into view. */
-export function Reveal({ children, className = '', index = 0 }: { children: ReactNode; className?: string; index?: number }) {
-  return <div className={`stagger ${className}`} style={{ '--i': index } as CSSProperties}>{children}</div>
 }

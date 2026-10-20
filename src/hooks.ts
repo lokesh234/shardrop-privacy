@@ -66,3 +66,19 @@ export function useReveal<T extends HTMLElement>() {
 
 export const prefersReducedMotion = () =>
   typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+/** True once the page has scrolled past the element with this id. */
+export function useScrolledPast(id: string, offset = 0) {
+  const [past, setPast] = useState(false)
+  useEffect(() => {
+    const update = () => {
+      const el = document.getElementById(id)
+      if (el) setPast(el.getBoundingClientRect().bottom <= offset)
+    }
+    update()
+    window.addEventListener('scroll', update, { passive: true })
+    window.addEventListener('resize', update)
+    return () => { window.removeEventListener('scroll', update); window.removeEventListener('resize', update) }
+  }, [id, offset])
+  return past
+}

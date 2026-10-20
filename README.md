@@ -15,7 +15,7 @@ Fonts are bundled with the site, so the page makes no third-party requests.
 ## Edit
 
 - Contact email, developer name and effective date: `src/config.ts`
-- Policy text: `src/App.tsx`, plus the data map (`src/components/DataMap.tsx`), choices and FAQ components
+- Policy text: `src/App.tsx`, plus the ledger (`src/components/Ledger.tsx`), choices and FAQ components
 - Styles: `src/styles.css`
 
 When the app's data handling changes (new ad network, analytics, accounts), update the text and `EFFECTIVE_DATE`.
