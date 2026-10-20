@@ -51,7 +51,7 @@ export function Ledger() {
         </div>
         <div role="cell" className="nothing-cell">
           <p className="nothing-word">Nothing.</p>
-          <p>No servers, no analytics, no accounts. Prismfall sends nothing to us, so we can’t see your scores, your device or you.</p>
+          <p>No servers, no analytics, no accounts. Shardrop sends nothing to us, so we can’t see your scores, your device or you.</p>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ export function TopBar({ active, progress }: { active: string; progress: number 
       <div className="topbar-inner" ref={ref}>
         <a href="#top" className="brand">
           <img src={`${import.meta.env.BASE_URL}prism.svg`} alt="" width={18} height={18} />
-          Prismfall
+          Shardrop
         </a>
         <span className="topbar-where" aria-hidden={!onPaper}>
           {onPaper && index >= 0 && <><span className="mono">{String(index + 1).padStart(2, '0')}</span> {SECTIONS[index].label}</>}

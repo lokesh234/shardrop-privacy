@@ -56,22 +56,22 @@ export default function App() {
         <Section id="device" num="03" label="On your device" title="What the game remembers."
           standfirst="Your progress is saved on your phone, and only on your phone.">
           <div className="prose">
-            <p>To keep your progress between sessions, Prismfall saves your best scores, unlocked maps and mastery stars, shards and skins, missions, Daily Prism streaks and results, and your sound and haptics settings.</p>
-            <p>None of it leaves your device through Prismfall, and we can’t see it. It’s included in your own iCloud or computer backups if you make them, under Apple’s terms. Deleting the app deletes it.</p>
-            <p>We don’t run servers, and Prismfall has no analytics of its own.</p>
+            <p>To keep your progress between sessions, Shardrop saves your best scores, unlocked maps and mastery stars, shards and skins, missions, Daily Prism streaks and results, and your sound and haptics settings.</p>
+            <p>None of it leaves your device through Shardrop, and we can’t see it. It’s included in your own iCloud or computer backups if you make them, under Apple’s terms. Deleting the app deletes it.</p>
+            <p>We don’t run servers, and Shardrop has no analytics of its own.</p>
           </div>
         </Section>
 
         <Section id="game-center" num="04" label="Apple" title="Game Center."
           standfirst="Optional. If you’re signed in, your scores go to Apple’s leaderboards.">
           <div className="prose">
-            <p>If you’re signed in to Game Center, Prismfall sends your scores, Daily Prism results and achievements to Apple so they appear on leaderboards and to your friends. Your nickname and profile are managed by Apple; we never receive your Apple ID or email.</p>
+            <p>If you’re signed in to Game Center, Shardrop sends your scores, Daily Prism results and achievements to Apple so they appear on leaderboards and to your friends. Your nickname and profile are managed by Apple; we never receive your Apple ID or email.</p>
             <p>You can sign out in Settings › Game Center and the game works the same. Apple explains its handling of this data in the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>.</p>
           </div>
         </Section>
 
         <Section id="ads" num="05" label="Advertising" title="How ads work."
-          standfirst="Ads keep Prismfall free. Tracking only happens if you say yes.">
+          standfirst="Ads keep Shardrop free. Tracking only happens if you say yes.">
           <div className="prose">
             <p>You’ll see an occasional full-screen ad between runs, and you can choose to watch an ad for bonus shards. There are never ads while you play. Ads are delivered by <strong>AppLovin MAX</strong>, which may work with other ad networks, its “mediation partners”, to fill each one.</p>
           </div>
@@ -113,7 +113,7 @@ export default function App() {
         </Section>
 
         <Section id="children" num="07" label="Children" title="For players 13 and up."
-          standfirst="Prismfall isn’t directed at children under 13.">
+          standfirst="Shardrop isn’t directed at children under 13.">
           <div className="prose">
             <p>We don’t knowingly collect personal information from children under 13, or the minimum age in your country. If you believe a child has provided information through the app, <a href="#contact">get in touch</a> and we’ll help remove it.</p>
           </div>
@@ -136,7 +136,7 @@ export default function App() {
           standfirst="On-device data lasts until you delete the app. Anything sent out is encrypted.">
           <div className="prose">
             <p>Data on your device stays until you delete the app. Apple keeps Game Center data under its own policies, and AppLovin and its partners keep advertising data for the periods in theirs. Information sent to them travels over encrypted connections.</p>
-            <p>If the way Prismfall handles information changes, for example a new partner, we’ll update this page and its effective date, and mention significant changes in the app’s release notes.</p>
+            <p>If the way Shardrop handles information changes, for example a new partner, we’ll update this page and its effective date, and mention significant changes in the app’s release notes.</p>
           </div>
         </Section>
 
@@ -146,17 +146,17 @@ export default function App() {
 
         <Section id="contact" num="11" label="Contact" title={<>Questions? Write to the person<br className="br-wide" /> who made the game.</>}>
           <div className="contact">
-            <a className="contact-link" href={`mailto:${CONTACT_EMAIL}?subject=Prismfall%20privacy`}>
+            <a className="contact-link" href={`mailto:${CONTACT_EMAIL}?subject=Shardrop%20privacy`}>
               {CONTACT_EMAIL} <span aria-hidden="true">→</span>
             </a>
-            <p>Prismfall is made by {DEVELOPER}, an independent developer. You’ll usually hear back within a few days.</p>
+            <p>Shardrop is made by {DEVELOPER}, an independent developer. You’ll usually hear back within a few days.</p>
           </div>
         </Section>
       </main>
 
       <footer className="footer mono">
         <span>© 2026 {DEVELOPER}</span>
-        <span>Prismfall Privacy Policy · Effective {EFFECTIVE_DATE}</span>
+        <span>Shardrop Privacy Policy · Effective {EFFECTIVE_DATE}</span>
         <a href="#top">Back to top ↑</a>
       </footer>
     </>
