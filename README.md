@@ -1,6 +1,6 @@
 # Shardrop privacy policy
 
-The privacy policy site for Shardrop, built with React and Vite. Live at https://lokesh234.github.io/prismfall-privacy/
+The privacy policy site for Shardrop, built with React and Vite. Live at https://lokesh234.github.io/shardrop-privacy/
 
 ## Develop
 
