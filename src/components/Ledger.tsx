@@ -12,7 +12,7 @@ const ROWS = [
     control: 'Settings › Game Center › Sign Out.',
   },
   {
-    where: 'AppLovin & ad partners', tag: 'Ads', swatch: 'pink',
+    where: 'Google AdMob & ad partners', tag: 'Ads', swatch: 'pink',
     what: ['Device identifiers (IDFV, and IDFA only if you allow tracking)', 'Device model, iOS version, language', 'IP address, for approximate location', 'Which ads were shown, watched or tapped'],
     why: 'Showing the ads that keep the game free, paying out ads you choose to watch, and stopping ad fraud.',
     control: 'Settings › Privacy & Security › Tracking.',

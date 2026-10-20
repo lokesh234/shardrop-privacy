@@ -12,7 +12,7 @@ const IDS = SECTIONS.map((s) => s.id)
 const GLANCE = [
   { swatch: 'cyan', claim: 'Your progress never leaves your phone.', detail: 'Scores, shards, skins and settings are saved on your device. We can’t see them.' },
   { swatch: 'violet', claim: 'There is no account.', detail: 'No name, email, contacts, photos or precise location. Ever.' },
-  { swatch: 'pink', claim: 'Ads pay for the game.', detail: 'Our ad partner, AppLovin, receives device and ad data to show them.' },
+  { swatch: 'pink', claim: 'Ads pay for the game.', detail: 'Google AdMob receives device and ad data to show them.' },
   { swatch: 'gold', claim: 'Saying no costs you nothing.', detail: 'Decline tracking and the game plays exactly the same.' },
 ]
 
@@ -73,7 +73,7 @@ export default function App() {
         <Section id="ads" num="05" label="Advertising" title="How ads work."
           standfirst="Ads keep Shardrop free. Tracking only happens if you say yes.">
           <div className="prose">
-            <p>You’ll see an occasional full-screen ad between runs, and you can choose to watch an ad for bonus shards. There are never ads while you play. Ads are delivered by <strong>AppLovin MAX</strong>, which may work with other ad networks, its “mediation partners”, to fill each one.</p>
+            <p>You’ll see an occasional full-screen ad between runs, and you can choose to watch an ad for bonus shards. There are never ads while you play. Ads are delivered by <strong>Google AdMob</strong>, which may let other ad companies bid to fill each one.</p>
           </div>
           <div className="columns">
             <div>
@@ -102,8 +102,8 @@ export default function App() {
             <figcaption className="mono">Apple’s standard prompt appears before any tracking</figcaption>
           </figure>
           <div className="prose">
-            <p>In the European Economic Area, the UK and Switzerland, the app asks for your consent where the law requires it before ads use your data for personalization.</p>
-            <p>We don’t sell your personal information for money. AppLovin explains how it handles data in the <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">AppLovin Privacy Policy</a>.</p>
+            <p>In the European Economic Area, the UK and Switzerland, the app shows Google’s consent form before ads use your data, and you can change your answer any time in the game’s Settings under Ad Privacy Choices.</p>
+            <p>We don’t sell your personal information for money. Google explains how it uses information from apps that show its ads in <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>, and in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
           </div>
         </Section>
 
@@ -127,7 +127,7 @@ export default function App() {
             ))}
           </dl>
           <div className="prose">
-            <p>These come from laws like the GDPR in the EU and UK and state laws such as California’s. Because we don’t hold your data on servers, the quickest route is usually the settings above. For data held by our ad partner, you can also contact AppLovin directly. You’re always welcome to <a href="#contact">write to us</a>.</p>
+            <p>These come from laws like the GDPR in the EU and UK and state laws such as California’s. Because we don’t hold your data on servers, the quickest route is usually the settings above. For data held by our ad partner, you can also use Google’s privacy tools directly. You’re always welcome to <a href="#contact">write to us</a>.</p>
             <p className="fine">For users in the EEA and UK: the legal basis for advertising that uses your data is your consent. For non-personalized ads and fraud prevention, it’s our legitimate interest in keeping the game free and safe.</p>
           </div>
         </Section>
@@ -135,7 +135,7 @@ export default function App() {
         <Section id="retention" num="09" label="Retention & changes" title="How long, and what if it changes."
           standfirst="On-device data lasts until you delete the app. Anything sent out is encrypted.">
           <div className="prose">
-            <p>Data on your device stays until you delete the app. Apple keeps Game Center data under its own policies, and AppLovin and its partners keep advertising data for the periods in theirs. Information sent to them travels over encrypted connections.</p>
+            <p>Data on your device stays until you delete the app. Apple keeps Game Center data under its own policies, and Google and its ad partners keep advertising data for the periods in theirs. Information sent to them travels over encrypted connections.</p>
             <p>If the way Shardrop handles information changes, for example a new partner, we’ll update this page and its effective date, and mention significant changes in the app’s release notes.</p>
           </div>
         </Section>

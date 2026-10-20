@@ -6,7 +6,7 @@ const QUESTIONS: { q: string; a: ReactNode }[] = [
   { q: 'Why does the app ask to track me?', a: 'Apple requires every app to ask before using the advertising identifier. Allowing it can make ads more relevant. Declining is fine, and the game plays exactly the same.' },
   { q: 'What happens if I say no?', a: 'You still see ads, but they won’t be personalized using your activity in other companies’ apps and websites. Nothing in the game is locked.' },
   { q: 'Do I need an account?', a: 'No. There’s no sign-up, login or email. Game Center is optional and run by Apple.' },
-  { q: 'How do I delete my data?', a: 'Delete Shardrop from your iPhone; that erases everything the game stored. For ad data held by AppLovin, use the choices above or contact AppLovin directly.' },
+  { q: 'How do I delete my data?', a: 'Delete Shardrop from your iPhone; that erases everything the game stored. For ad data held by Google, use the choices above or Google’s privacy tools.' },
 ]
 
 export function Faq() {
