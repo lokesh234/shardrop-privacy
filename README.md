@@ -1,25 +1,5 @@
-# Shardrop privacy policy
+# Moved
 
-The privacy policy site for Shardrop, built with React and Vite. Live at https://lokesh234.github.io/shardrop-privacy/
+The Shardrop privacy policy now lives in [lokesh234/shardrop-site](https://github.com/lokesh234/shardrop-site) under `privacy/`, and is published at **https://shardrop.com/privacy/**.
 
-## Develop
-
-```sh
-npm install
-npm run dev      # local server with hot reload
-npm run build    # production build into dist/
-```
-
-Fonts are bundled with the site, so the page makes no third-party requests.
-
-## Edit
-
-- Contact email, developer name and effective date: `src/config.ts`
-- Policy text: `src/App.tsx`, plus the ledger (`src/components/Ledger.tsx`), choices and FAQ components
-- Styles: `src/styles.css`
-
-When the app's data handling changes (new ad network, analytics, accounts), update the text and `EFFECTIVE_DATE`.
-
-## Deploy
-
-Every push to `main` builds and deploys to GitHub Pages through `.github/workflows/deploy.yml`.
+This repository is archived.
